@@ -11,8 +11,7 @@ struct Pokemon: Codable, Identifiable, Equatable {
 	let name: String
 	let url: String
 	
-	static var samplePokemon = Pokemon(name: "bulbasaur",
-									url: "https://pokeapi.co/api/v2/pokemon/1/")
+	static var samplePokemon = Pokemon(name: "bulbasaur", url: "https://pokeapi.co/api/v2/pokemon/1/")
 }
 
 struct DetailPokemon: Codable {

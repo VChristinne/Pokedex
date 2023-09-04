@@ -1,24 +1,27 @@
 import SwiftUI
+import FLAnimatedImage
 
 struct PokemonView: View {
 	@EnvironmentObject var vm: ViewModel
 	let pokemon: Pokemon
-	let dimensions: Double = 140
+	let dimensions: Double = 100
 	
 	var body: some View {
 		VStack {
-			AsyncImage(url: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(vm.getPokemonIndex(pokemon:pokemon)).png")) { image in
-					image
-						.resizable()
-						.scaledToFit()
+			if let url = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/\(vm.getPokemonIndex(pokemon: pokemon)).gif") {
+				GeometryReader { geometry in
+					GifView(url: url)
 						.frame(width: dimensions, height: dimensions)
-				
-			} placeholder: {
+						.aspectRatio(contentMode: .fit)
+						.clipShape(Circle())
+				}
+				.frame(width: dimensions, height: dimensions)
+				.background(.thinMaterial)
+				.clipShape(Circle())
+			} else {
 				ProgressView()
 					.frame(width: dimensions, height: dimensions)
 			}
-			.background(.thinMaterial)
-			.clipShape(Circle())
 			
 			Text("\(pokemon.name.capitalized)")
 				.font(.system(size: 16, weight: .medium, design: .monospaced))

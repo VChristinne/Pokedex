@@ -34,6 +34,8 @@
 		428A2EC92AA51ECF006F205D /* PokeballView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A2EC82AA51ECF006F205D /* PokeballView.swift */; };
 		428A2ECB2AA51F76006F205D /* PokeballDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A2ECA2AA51F76006F205D /* PokeballDetailView.swift */; };
 		428A2ECD2AA51FD9006F205D /* PokeballsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A2ECC2AA51FD9006F205D /* PokeballsView.swift */; };
+		42AF7EA82AA6142F00C82957 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = 42AF7EA72AA6142F00C82957 /* FLAnimatedImage */; };
+		42AF7EAA2AA615B700C82957 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF7EA92AA615B700C82957 /* AnimatedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,7 @@
 		428A2EC82AA51ECF006F205D /* PokeballView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeballView.swift; sourceTree = "<group>"; };
 		428A2ECA2AA51F76006F205D /* PokeballDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeballDetailView.swift; sourceTree = "<group>"; };
 		428A2ECC2AA51FD9006F205D /* PokeballsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeballsView.swift; sourceTree = "<group>"; };
+		42AF7EA92AA615B700C82957 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42AF7EA82AA6142F00C82957 /* FLAnimatedImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				428A2E962AA3A7B5006F205D /* Helpers.swift */,
+				42AF7EA92AA615B700C82957 /* AnimatedImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -224,6 +229,9 @@
 			dependencies = (
 			);
 			name = Pokedex;
+			packageProductDependencies = (
+				42AF7EA72AA6142F00C82957 /* FLAnimatedImage */,
+			);
 			productName = Pokedex;
 			productReference = 428A2E812AA3A5B3006F205D /* Pokedex.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +260,9 @@
 				Base,
 			);
 			mainGroup = 428A2E782AA3A5B3006F205D;
+			packageReferences = (
+				42AF7EA62AA6142F00C82957 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */,
+			);
 			productRefGroup = 428A2E822AA3A5B3006F205D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +300,7 @@
 				428A2EC52AA51057006F205D /* PokeballModel.swift in Sources */,
 				428A2EBA2AA49B02006F205D /* BerryModel.swift in Sources */,
 				428A2E872AA3A5B3006F205D /* ContentView.swift in Sources */,
+				42AF7EAA2AA615B700C82957 /* AnimatedImageView.swift in Sources */,
 				428A2ECB2AA51F76006F205D /* PokeballDetailView.swift in Sources */,
 				428A2EC32AA50FAC006F205D /* PokeballManager.swift in Sources */,
 				428A2E972AA3A7B5006F205D /* Helpers.swift in Sources */,
@@ -505,6 +517,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42AF7EA62AA6142F00C82957 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flipboard/FLAnimatedImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42AF7EA72AA6142F00C82957 /* FLAnimatedImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42AF7EA62AA6142F00C82957 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */;
+			productName = FLAnimatedImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 428A2E792AA3A5B3006F205D /* Project object */;
 }
