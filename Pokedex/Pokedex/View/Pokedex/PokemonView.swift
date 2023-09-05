@@ -4,7 +4,7 @@ import FLAnimatedImage
 struct PokemonView: View {
 	@EnvironmentObject var vm: ViewModel
 	let pokemon: Pokemon
-	let dimensions: Double = 100
+	let dimensions: Double = 120
 	
 	var body: some View {
 		VStack {
@@ -24,7 +24,7 @@ struct PokemonView: View {
 			}
 			
 			Text("\(pokemon.name.capitalized)")
-				.font(.system(size: 16, weight: .medium, design: .monospaced))
+				.font(.system(size: 18, weight: .black, design: .monospaced))
 				.padding(.bottom, 20)
 		}
 	}

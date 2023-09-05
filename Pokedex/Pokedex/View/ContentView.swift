@@ -21,6 +21,8 @@ struct ContentView: View {
 					Text("Pokeballs")
 				}
 		}
+		.accentColor(.red)
+
 	}
 }
 

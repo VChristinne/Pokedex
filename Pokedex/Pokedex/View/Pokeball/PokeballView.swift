@@ -21,7 +21,7 @@ struct PokeballView: View {
 			.clipShape(Circle())
 			
 			Text("\(pokeball.name.capitalized)")
-				.font(.system(size: 16, weight: .medium, design: .monospaced))
+				.font(.system(size: 18, weight: .black, design: .monospaced))
 				.padding(.bottom, 20)
 		}
 	}
