@@ -13,11 +13,11 @@ struct PokemonView: View {
 					GifView(url: url)
 						.frame(width: dimensions, height: dimensions)
 						.aspectRatio(contentMode: .fit)
-						.clipShape(Circle())
 				}
 				.frame(width: dimensions, height: dimensions)
 				.background(.thinMaterial)
 				.clipShape(Circle())
+				
 			} else {
 				ProgressView()
 					.frame(width: dimensions, height: dimensions)
