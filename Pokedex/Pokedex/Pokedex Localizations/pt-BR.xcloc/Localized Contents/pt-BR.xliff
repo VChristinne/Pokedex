@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Pokedex/en.lproj/Pokedex-InfoPlist.strings" datatype="plaintext" source-language="en" target-language="pt-BR">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Pokedex</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Pokedex/Localizable.xcstrings" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <target state="translated">%@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Base Experience**: %llu" xml:space="preserve">
+        <source>**Base Experience**: %llu</source>
+        <target state="translated">**Experiência Base**: %llu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Cost**: %llu" xml:space="preserve">
+        <source>**Cost**: %llu</source>
+        <target state="translated">**Custo**: %llu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Growth time**: %llu" xml:space="preserve">
+        <source>**Growth time**: %llu</source>
+        <target state="translated">**Tempo de crescimento**: %llu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Height**: %@ M" xml:space="preserve">
+        <source>**Height**: %@ M</source>
+        <target state="translated">**Altura**: %@ M</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**ID**: %llu" xml:space="preserve">
+        <source>**ID**: %llu</source>
+        <target state="translated">**ID**: %llu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Max harvest**: %llu" xml:space="preserve">
+        <source>**Max harvest**: %llu</source>
+        <target state="translated">**Colheita máxima**: %llu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Natural gift power**: %llu" xml:space="preserve">
+        <source>**Natural gift power**: %llu</source>
+        <target state="translated">**Dom natural**: %llu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Smoothness**: %llu" xml:space="preserve">
+        <source>**Smoothness**: %llu</source>
+        <target state="translated">**Suavidade**: %llu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Soil dryness**: %llu" xml:space="preserve">
+        <source>**Soil dryness**: %llu</source>
+        <target state="translated">**Secura do solo**: %llu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**Weight**: %@ Kg" xml:space="preserve">
+        <source>**Weight**: %@ Kg</source>
+        <target state="translated">**Peso**: %@ Kg</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Berries" xml:space="preserve">
+        <source>Berries</source>
+        <target state="translated">Berries</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dark Mode" xml:space="preserve">
+        <source>Dark Mode</source>
+        <target state="translated">Modo Escuro</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="English" xml:space="preserve">
+        <source>English</source>
+        <target state="translated">Inglês</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Light Mode" xml:space="preserve">
+        <source>Light Mode</source>
+        <target state="translated">Modo Claro</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="More" xml:space="preserve">
+        <source>More</source>
+        <target state="translated">Outros</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Pokeballs" xml:space="preserve">
+        <source>Pokeballs</source>
+        <target state="translated">Pokeballs</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Pokedex" xml:space="preserve">
+        <source>Pokedex</source>
+        <target state="translated">Pokedex</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Portuguese" xml:space="preserve">
+        <source>Portuguese</source>
+        <target state="translated">Português</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select Language" xml:space="preserve">
+        <source>Select Language</source>
+        <target state="translated">Selecione o idioma</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

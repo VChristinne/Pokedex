@@ -4,7 +4,7 @@ import FLAnimatedImage
 struct PokemonView: View {
 	@EnvironmentObject var vm: ViewModel
 	let pokemon: Pokemon
-	let dimensions: Double = 120
+	let dimensions: Double = 135
 	
 	var body: some View {
 		VStack {
@@ -16,7 +16,7 @@ struct PokemonView: View {
 				}
 				.frame(width: dimensions, height: dimensions)
 				.background(.thinMaterial)
-				.clipShape(Circle())
+				.clipShape(RoundedRectangle(cornerRadius: 25.0))
 				
 			} else {
 				ProgressView()

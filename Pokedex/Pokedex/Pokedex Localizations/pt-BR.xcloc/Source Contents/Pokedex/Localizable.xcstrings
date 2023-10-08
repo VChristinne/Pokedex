@@ -1,0 +1,66 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "**Base Experience**: %llu" : {
+
+    },
+    "**Cost**: %llu" : {
+
+    },
+    "**Growth time**: %llu" : {
+
+    },
+    "**Height**: %@ M" : {
+
+    },
+    "**ID**: %llu" : {
+
+    },
+    "**Max harvest**: %llu" : {
+
+    },
+    "**Natural gift power**: %llu" : {
+
+    },
+    "**Smoothness**: %llu" : {
+
+    },
+    "**Soil dryness**: %llu" : {
+
+    },
+    "**Weight**: %@ Kg" : {
+
+    },
+    "%@" : {
+
+    },
+    "Berries" : {
+
+    },
+    "Dark Mode" : {
+
+    },
+    "English" : {
+
+    },
+    "Light Mode" : {
+
+    },
+    "More" : {
+
+    },
+    "Pokeballs" : {
+
+    },
+    "Pokedex" : {
+
+    },
+    "Portuguese" : {
+
+    },
+    "Select Language" : {
+
+    }
+  },
+  "version" : "1.0"
+}

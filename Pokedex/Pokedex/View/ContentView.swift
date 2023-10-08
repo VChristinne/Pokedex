@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State private var isDarkMode = false
+	
 	var body: some View {
 		TabView {
 			PokedexView()
@@ -20,15 +22,18 @@ struct ContentView: View {
 					Image(systemName: "cricket.ball.fill")
 					Text("Pokeballs")
 				}
+			
+			SettingsView(isDarkMode: $isDarkMode)
+				.tabItem {
+					Image(systemName: "line.3.horizontal")
+					Text("More")
+				}
 		}
 		.accentColor(.red)
 
 	}
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-		ContentView()
-			.colorScheme(.light)
-    }
+#Preview("Pokedex") {
+	ContentView()
 }
