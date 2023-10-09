@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct FloatingMenuView: View {
-	
+	@Binding var selectedTab: Int
 	@State private var showMenuItem = false
 	
 	var body: some View {
@@ -9,7 +9,7 @@ struct FloatingMenuView: View {
 			VStack {
 				if showMenuItem {
 					Button(action: {
-							// Adicione a ação que você deseja quando o botão for pressionado
+						self.showPokedex()
 					}) {
 						Image(systemName: "house.fill")
 							.imageScale(.large)
@@ -20,7 +20,7 @@ struct FloatingMenuView: View {
 					}
 					
 					Button(action: {
-							// Adicione a ação que você deseja quando o botão for pressionado
+						self.showBerries()
 					}) {
 						Image(systemName: "tree.fill")
 							.imageScale(.large)
@@ -31,7 +31,7 @@ struct FloatingMenuView: View {
 					}
 					
 					Button(action: {
-							// Adicione a ação que você deseja quando o botão for pressionado
+						self.showPokeballs()
 					}) {
 						Image(systemName: "cricket.ball.fill")
 							.imageScale(.large)
@@ -61,6 +61,23 @@ struct FloatingMenuView: View {
 	func showMenu() {
 		showMenuItem.toggle()
 	}
+	
+	func showPokedex() {
+		selectedTab = 0
+	}
+	
+	func showBerries() {
+		selectedTab = 1
+	}
+	
+	func showPokeballs() {
+		selectedTab = 2
+	}
+	
+	func showSettings() {
+		selectedTab = 3
+	}
+	
 }
 
 
