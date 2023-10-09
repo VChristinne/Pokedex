@@ -4,28 +4,45 @@ struct PokedexView: View {
 	@StateObject var vm = ViewModel()
 	
 	private let adaptiveColumns = [
-		GridItem(.adaptive(minimum: 180))
+		GridItem(.adaptive(minimum: 120))
 	]
 	
 	var body: some View {
-		
 		NavigationView {
-			ScrollView {
-				LazyVGrid(columns: adaptiveColumns, spacing: 12) {
-					ForEach(vm.filteredPokemon) { pokemon in
-						NavigationLink(destination: PokemonDetailView(pokemon: pokemon)) {
-							PokemonView(pokemon: pokemon)
+			VStack {
+				CustomImageTopView()
+					.frame(width: 120, height: 20)
+					.padding(.top, 10)
+				
+				ScrollView {
+					LazyVGrid(columns: adaptiveColumns, spacing: 15) {
+						ForEach(vm.filteredPokemon) { pokemon in
+							NavigationLink(destination: PokemonDetailView(pokemon: pokemon)) {
+								PokemonView(pokemon: pokemon)
+							}
 						}
 					}
 				}
-				.animation(.easeIn(duration: 0.3), value: vm.filteredPokemon.count)
-				.navigationTitle("Pokedex")
-				.navigationBarTitleDisplayMode(.automatic)
+				
+				CustomImageBottomView()
+					.frame(width: 120, height: 20)
+					.padding(.top, 10)
 			}
-			.searchable(text: $vm.searchText)
+			.animation(.easeIn(duration: 0.3), value: vm.filteredPokemon.count)
+			.navigationBarTitleDisplayMode(.inline)
+			.frame(maxWidth: .infinity, maxHeight: .infinity)
+			.padding(.top, 10)
+			.background(
+				LinearGradient(gradient: Gradient(colors: [Color("PokedexBG1"),
+														   Color("PokedexBG2"),
+														   Color("PokedexBG3"),
+														   Color("PokedexBG4"),
+														   Color("PokedexBG5")]),
+							   startPoint: .top,
+							   endPoint: .bottom)
+			)
 		}
 		.environmentObject(vm)
-		
 	}
 }
 

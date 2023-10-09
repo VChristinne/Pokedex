@@ -1,38 +1,59 @@
 import SwiftUI
-import FLAnimatedImage
 
 struct PokemonView: View {
 	@EnvironmentObject var vm: ViewModel
+	@State private var uiImage: UIImage?
+	
 	let pokemon: Pokemon
-	let dimensions: Double = 135
 	
 	var body: some View {
 		VStack {
-			if let url = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/\(vm.getPokemonIndex(pokemon: pokemon)).gif") {
-				GeometryReader { geometry in
-					GifView(url: url)
-						.frame(width: dimensions, height: dimensions)
+			VStack {
+				if let uiImage = uiImage {
+					Image(uiImage: uiImage)
+						.resizable()
 						.aspectRatio(contentMode: .fit)
+						.frame(width: 120, height: 120)  // pokemon size
+				} else {
+					ProgressView()
+						.frame(width: 100, height: 120)
+						.onAppear {
+							loadUIImage()
+						}
 				}
-				.frame(width: dimensions, height: dimensions)
-				.background(.thinMaterial)
-				.clipShape(RoundedRectangle(cornerRadius: 25.0))
-				
-			} else {
-				ProgressView()
-					.frame(width: dimensions, height: dimensions)
 			}
+			.frame(width: 80)
+			.background(
+				Circle()
+					.fill(Color("PokemonBG"))
+					.padding(.top)
+			)
+			.padding(5)
 			
-			Text("\(pokemon.name.capitalized)")
-				.font(.system(size: 18, weight: .black, design: .monospaced))
-				.padding(.bottom, 20)
+			Text("\(pokemon.name.lowercased())")
+				.font(.system(size: 16, weight: .black, design: .monospaced))
+				.tint(.secondary)
+				.padding(.bottom, 3)
 		}
+	}
+	
+	private func loadUIImage() {
+		guard let url = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/\(vm.getPokemonIndex(pokemon: pokemon)).png") else {
+			return
+		}
+		
+		URLSession.shared.dataTask(with: url) { data, response, error in
+			guard let data = data, error == nil else {
+				return
+			}
+			DispatchQueue.main.async {
+				self.uiImage = UIImage(data: data)
+			}
+		}.resume()
 	}
 }
 
-struct PokemonView_Previews: PreviewProvider {
-	static var previews: some View {
-		PokemonView(pokemon: Pokemon.samplePokemon)
-			.environmentObject(ViewModel())
-	}
+#Preview ("Sample Pokemon") {
+	PokemonView(pokemon: Pokemon.samplePokemon)
+		.environmentObject(ViewModel())
 }

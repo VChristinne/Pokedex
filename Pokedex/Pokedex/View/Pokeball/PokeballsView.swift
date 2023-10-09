@@ -19,7 +19,6 @@ struct PokeballsView: View {
 					}
 				}
 				.animation(.easeIn(duration: 0.3), value: vm.filteredPokeball.count)
-				.navigationTitle("Pokeballs")
 				.navigationBarTitleDisplayMode(.automatic)
 			}
 			.searchable(text: $vm.searchText)

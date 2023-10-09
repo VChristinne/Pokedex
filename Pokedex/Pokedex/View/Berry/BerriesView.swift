@@ -19,7 +19,6 @@ struct BerriesView: View {
 					}
 				}
 				.animation(.easeIn(duration: 0.3), value: vm.filteredBerry.count)
-				.navigationTitle("Berries")
 				.navigationBarTitleDisplayMode(.automatic)
 			}
 			.searchable(text: $vm.searchText)

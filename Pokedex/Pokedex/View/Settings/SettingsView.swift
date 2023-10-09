@@ -2,27 +2,25 @@ import SwiftUI
 
 struct SettingsView: View {
 	@Binding var isDarkMode: Bool
+	@Binding var isClassicalMode: Bool
 	
-    var body: some View {
+	var body: some View {
 		List {
 			HStack {
 				Image(systemName: isDarkMode ? "moon.fill" : "sun.max.fill")
-					.foregroundStyle(isDarkMode ? .indigo : .orange)
+					.foregroundColor(isDarkMode ? Color.indigo : Color.orange)
 					.onTapGesture { self.isDarkMode.toggle() }
 					.preferredColorScheme(isDarkMode ? .dark : .light)
 				
 				Text(isDarkMode ? "Dark Mode" : "Light Mode")
-					.monospaced()
+					.font(Font.system(.body, design: .monospaced))
 			}
 			
-			// TODO: MORE OPTIONS
-			
-			
 		}
-		
-    }
+	}
 }
 
-#Preview("Pokedex") {
+
+#Preview {
 	ContentView()
 }

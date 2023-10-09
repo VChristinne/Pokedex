@@ -6,7 +6,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Experiência Base**: %llu"
+            "value" : "**Experiência base**: %llu"
           }
         }
       }
@@ -31,12 +31,12 @@
         }
       }
     },
-    "**Height**: %@ M" : {
+    "**Height**: %@ m" : {
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Altura**: %@ M"
+            "value" : "**Altura**: %@ m"
           }
         }
       }
@@ -66,7 +66,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Dom natural**: %llu"
+            "value" : "**Dom Natural**: %llu"
           }
         }
       }
@@ -91,12 +91,12 @@
         }
       }
     },
-    "**Weight**: %@ Kg" : {
+    "**Weight**: %@ kg" : {
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Peso**: %@ Kg"
+            "value" : "**Peso**: %@ kg"
           }
         }
       }
@@ -111,32 +111,12 @@
         }
       }
     },
-    "Berries" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Berries"
-          }
-        }
-      }
-    },
     "Dark Mode" : {
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Modo Escuro"
-          }
-        }
-      }
-    },
-    "English" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inglês"
+            "value" : "Modo escuro"
           }
         }
       }
@@ -146,57 +126,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Modo Claro"
-          }
-        }
-      }
-    },
-    "More" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Outros"
-          }
-        }
-      }
-    },
-    "Pokeballs" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pokeballs"
-          }
-        }
-      }
-    },
-    "Pokedex" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pokedex"
-          }
-        }
-      }
-    },
-    "Portuguese" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Português"
-          }
-        }
-      }
-    },
-    "Select Language" : {
-      "localizations" : {
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Selecione o idioma"
+            "value" : "Modo claro"
           }
         }
       }
