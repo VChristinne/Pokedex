@@ -9,7 +9,7 @@ struct PokedexView: View {
 	
 	var body: some View {
 		NavigationView {
-			VStack {
+			VStack (spacing: 0) {
 				CustomImageTopView()
 					.frame(width: 120, height: 20)
 					.padding(.top, 10)
@@ -21,6 +21,7 @@ struct PokedexView: View {
 								PokemonView(pokemon: pokemon)
 							}
 						}
+						.shadow(color: .black, radius: 3)
 					}
 				}
 				

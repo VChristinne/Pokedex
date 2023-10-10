@@ -32,7 +32,8 @@ struct PokemonView: View {
 			
 			Text("\(pokemon.name.lowercased())")
 				.font(.system(size: 16, weight: .black, design: .monospaced))
-				.tint(.secondary)
+				.tint(.white)
+				.shadow(color: .blue, radius: 2)
 				.padding(.bottom, 3)
 		}
 	}
