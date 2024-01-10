@@ -298,6 +298,7 @@
 				en,
 				Base,
 				"pt-BR",
+				ko,
 			);
 			mainGroup = 428A2E782AA3A5B3006F205D;
 			packageReferences = (
