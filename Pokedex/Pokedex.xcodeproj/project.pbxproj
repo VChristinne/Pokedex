@@ -39,7 +39,6 @@
 		42A58C372AD4144600F12043 /* CustomImageTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A58C362AD4144600F12043 /* CustomImageTopView.swift */; };
 		42A58C3A2AD4288200F12043 /* CustomImageBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A58C392AD4288200F12043 /* CustomImageBottomView.swift */; };
 		42A58C3C2AD42F5F00F12043 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 42A58C3B2AD42F5F00F12043 /* Localizable.xcstrings */; };
-		42AF7EAA2AA615B700C82957 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF7EA92AA615B700C82957 /* AnimatedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,7 +88,6 @@
 		42A58C362AD4144600F12043 /* CustomImageTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageTopView.swift; sourceTree = "<group>"; };
 		42A58C392AD4288200F12043 /* CustomImageBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageBottomView.swift; sourceTree = "<group>"; };
 		42A58C3B2AD42F5F00F12043 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		42AF7EA92AA615B700C82957 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				428A2E962AA3A7B5006F205D /* Helpers.swift */,
-				42AF7EA92AA615B700C82957 /* AnimatedImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -286,7 +283,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					428A2E802AA3A5B3006F205D = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -346,7 +343,6 @@
 				428A2EC52AA51057006F205D /* PokeballModel.swift in Sources */,
 				428A2EBA2AA49B02006F205D /* BerryModel.swift in Sources */,
 				428A2E872AA3A5B3006F205D /* ContentView.swift in Sources */,
-				42AF7EAA2AA615B700C82957 /* AnimatedImageView.swift in Sources */,
 				428A2ECB2AA51F76006F205D /* PokeballDetailView.swift in Sources */,
 				428A2EC32AA50FAC006F205D /* PokeballManager.swift in Sources */,
 				428A2E972AA3A7B5006F205D /* Helpers.swift in Sources */,
@@ -373,6 +369,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -434,6 +432,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
